@@ -12,7 +12,7 @@ function pageTransitions() {
      })
     )
 
-    // change mainscreen
+    // change mainscreen 
     allSections.addEventListener('click', e => {
         // pick id that is the same as the data-id
         const id = e.target.dataset.id
