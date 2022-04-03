@@ -6,8 +6,8 @@
 }
 
 :root {
-    // --color-primary: #191d2b;
-    --color-primary: maroon;
+    --color-primary: #191d2b;
+    // --color-primary: maroon;
     --color-secondary: #27AE60;
     --color-white: #FFFFFF;
     --color-grey0: #f8f8f8;
@@ -53,33 +53,51 @@ section {
 
 .section{
     transform: translateY(-100%) scale(0);
-    transition: all .4s ease-in-out;
+    transition: all 1s ease-in-out;
     background-color: var(--color-primary);
 }
 
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: maroon;
 }
 
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: violet;
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: indigo;
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: blue;
 }
 
 .sec5 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: green;
+}
+
+.active {
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-100%) scaleY(0);
+        }
+        100% {
+            transform: translateY(0) scaleY(1)
+        }
+    }
 }
 
 .controls {
