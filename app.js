@@ -5,7 +5,7 @@ const allSections = document.querySelector('.main-content')
 
 function pageTransitions() {
     // change active-btn 
-    sectBtn.forEach(btn => btn.addEventListener('click', ()=>{
+    sectBtn.forEach(btn => btn.addEventListener('click', () =>{
         let currentBtn = document.querySelector('.active-btn')
         currentBtn.classList.remove('active-btn')
         btn.classList.add("active-btn")
@@ -26,4 +26,5 @@ function pageTransitions() {
         }
     })
 }
+
 pageTransitions()
